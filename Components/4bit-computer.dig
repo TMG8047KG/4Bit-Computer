@@ -123,6 +123,10 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>Description</string>
+          <string>Automatic/Manual instructions (automatically to load the asembly or to maually write it)</string>
+        </entry>
+        <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
         </entry>
@@ -154,7 +158,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>Write</string>
+          <string>Start Program</string>
         </entry>
         <entry>
           <string>isHighZ</string>
@@ -175,12 +179,16 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>Description</string>
+          <string>Reads the argument/parameter from the bus line</string>
+        </entry>
+        <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
         </entry>
         <entry>
           <string>Label</string>
-          <string>Read EE</string>
+          <string>Read Command Argument</string>
         </entry>
         <entry>
           <string>isHighZ</string>
@@ -201,12 +209,16 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>Description</string>
+          <string>Reads what command to be ran from the bus line</string>
+        </entry>
+        <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
         </entry>
         <entry>
           <string>Label</string>
-          <string>Read EB</string>
+          <string>Read Command</string>
         </entry>
         <entry>
           <string>isHighZ</string>
@@ -227,12 +239,16 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>Description</string>
+          <string>Register C starts to read from the bus line</string>
+        </entry>
+        <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
         </entry>
         <entry>
           <string>Label</string>
-          <string>Read rC</string>
+          <string>Write to rC</string>
         </entry>
         <entry>
           <string>isHighZ</string>
@@ -305,12 +321,16 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>Description</string>
+          <string>Register A starts to read from the bus line</string>
+        </entry>
+        <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
         </entry>
         <entry>
           <string>Label</string>
-          <string>Read rA</string>
+          <string>Write to rA</string>
         </entry>
         <entry>
           <string>isHighZ</string>
@@ -331,12 +351,16 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>Description</string>
+          <string>Register B starts to read from the bus line</string>
+        </entry>
+        <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
         </entry>
         <entry>
           <string>Label</string>
-          <string>Read rB</string>
+          <string>Write to rB</string>
         </entry>
         <entry>
           <string>isHighZ</string>
@@ -388,7 +412,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>Write to Bus</string>
+          <string>RAM to Bus</string>
         </entry>
         <entry>
           <string>isHighZ</string>
@@ -434,6 +458,10 @@
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>Enables Flags</string>
+        </entry>
         <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
@@ -486,6 +514,10 @@
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>Pretty much self-explanatory. Enables the address registers to read from the BUS line.</string>
+        </entry>
         <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
@@ -686,12 +718,16 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>Description</string>
+          <string>Register C start to write to the bus line</string>
+        </entry>
+        <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
         </entry>
         <entry>
           <string>Label</string>
-          <string>C to BUS</string>
+          <string>rC to Bus</string>
         </entry>
         <entry>
           <string>isHighZ</string>
@@ -706,12 +742,12 @@
           <value v="0" z="true"/>
         </entry>
       </elementAttributes>
-      <pos x="2400" y="1760"/>
+      <pos x="2100" y="1760"/>
     </visualElement>
     <visualElement>
       <elementName>PullDown</elementName>
       <elementAttributes/>
-      <pos x="2380" y="1700"/>
+      <pos x="2080" y="1700"/>
     </visualElement>
     <visualElement>
       <elementName>tri-state register.dig</elementName>
@@ -783,7 +819,7 @@
     </wire>
     <wire>
       <p1 x="1900" y="1040"/>
-      <p2 x="2400" y="1040"/>
+      <p2 x="2100" y="1040"/>
     </wire>
     <wire>
       <p1 x="1660" y="400"/>
@@ -850,8 +886,8 @@
       <p2 x="2340" y="1680"/>
     </wire>
     <wire>
-      <p1 x="2380" y="1680"/>
-      <p2 x="2400" y="1680"/>
+      <p1 x="2080" y="1680"/>
+      <p2 x="2100" y="1680"/>
     </wire>
     <wire>
       <p1 x="940" y="660"/>
@@ -1386,6 +1422,10 @@
       <p2 x="2080" y="600"/>
     </wire>
     <wire>
+      <p1 x="2080" y="1680"/>
+      <p2 x="2080" y="1700"/>
+    </wire>
+    <wire>
       <p1 x="1440" y="720"/>
       <p2 x="1440" y="1680"/>
     </wire>
@@ -1546,6 +1586,14 @@
       <p2 x="2100" y="620"/>
     </wire>
     <wire>
+      <p1 x="2100" y="1040"/>
+      <p2 x="2100" y="1680"/>
+    </wire>
+    <wire>
+      <p1 x="2100" y="1680"/>
+      <p2 x="2100" y="1760"/>
+    </wire>
+    <wire>
       <p1 x="1460" y="340"/>
       <p2 x="1460" y="1640"/>
     </wire>
@@ -1652,10 +1700,6 @@
     <wire>
       <p1 x="1740" y="1680"/>
       <p2 x="1740" y="1700"/>
-    </wire>
-    <wire>
-      <p1 x="2380" y="1680"/>
-      <p2 x="2380" y="1700"/>
     </wire>
     <wire>
       <p1 x="2000" y="240"/>
@@ -1824,14 +1868,6 @@
     <wire>
       <p1 x="1760" y="1680"/>
       <p2 x="1760" y="1760"/>
-    </wire>
-    <wire>
-      <p1 x="2400" y="1040"/>
-      <p2 x="2400" y="1680"/>
-    </wire>
-    <wire>
-      <p1 x="2400" y="1680"/>
-      <p2 x="2400" y="1760"/>
     </wire>
     <wire>
       <p1 x="2020" y="240"/>
